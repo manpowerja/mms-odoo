@@ -61,7 +61,7 @@ function function3(){
     }
     else{
         sendMail();
-        alert("working");
+        alert("Your complaint has been successfully logged");
         return false;
     }
     
