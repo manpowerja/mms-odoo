@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Purchasing Tutorials</title>
+    <link href="style/purchasing.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <script src="script/tutorials.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="sessionPurchasing()">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/MMS Sales and Distribution Ltd.png" alt="" class="header-logo">
+            </div>
+            <input type="checkbox" id="checky">
+            <label for="checky">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </label>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="" style="pointer-events: none">Tutorials</a>
+                        <ul>
+                            <li><a href="#create_po" target="_self">Create purchase order</a></li>
+                            <li><a href="#create_bill" target="_self">Create a bill</a></li>
+                            <li><a href="#approve" target="_self">Approval Hierarchy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="login.html">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content-container">
+            <h1>Purchasing Tutorials</h1>
+            <a href="" id="create_po" class="nav-links"></a>
+            <h2>Creating a purchase order.</h2>
+            <ol>
+                <li>Open in the purchasing module.</li>
+                <img src="images/purchasing/purchasing-po1.png" class="tut-images">
+                <li>Click create to create purchase order.</li>
+                <img src="images/purchasing/pushasing-po2.png" class="tut-images">
+                <li>Fill out the rest the relevant feilds (Vendor, Deliver To, Currency etc.)</li>
+                <img src="images/purchasing/pushasing-po3.png" class="tut-images">
+                <li>Add products to purchase order.</li>
+                <img src="images/purchasing/pushasing-po4.png" class="tut-images">
+                <li>Fill out all relevant fields for each product (product, quanity, unit of measurement)</li>
+                <img src="images/purchasing/pushasing-po5.png" class="tut-images">
+                <li>Save the purchase order.</li>
+                <img src="images/purchasing/pushasing-po6.png" class="tut-images">
+                <li>Send purchase order for approval.</li>
+                <img src="images/purchasing/pushasing-po7.png" class="tut-images">
+                <li>Once purchase order has been approved, the purchase order has been successfully created.</li>
+            </ol>
+            <a href="" id="create_bill" class="nav-links"></a>
+            <h2>Creating a bill.</h2>
+            <ol>
+                <li>Select purchase order that bill should be created from.</li>
+                <img src="images/purchasing/pushasing-bill1.png" class="tut-images">
+                <li>Click on create bill.</li>
+                <img src="images/purchasing/pushasing-bill2.png" class="tut-images">
+                <li>Fill out all relevant fields (Bill Reference, Bill Date). The bill reference is the invoice number
+                    received from the vendor.</li>
+                <img src="images/purchasing/pushasing-bill3.png" class="tut-images">
+                <li>Confirm the bill.</li>
+                <img src="images/purchasing/pushasing-bill4.png" class="tut-images">
+                <li>Bill has been successfully created.</li>
+            </ol>
+            <a href="" id="approve" class="nav-links"></a>
+            <h2>Approval Hierachy</h2>
+            <img src="images/purchasing/hierachy.png" class="tut-images" id="approval">
+        </div>
+        <a href="tutorialdocs/Purchasing.pdf" download class="choplawd">
+            <div class="download">
+                <div class="d-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                </div>
+                <div class="d-text">
+                    <span id="spanAdd">Additional Manuals</span>
+                </div>
+            </div>
+        </a>
+
+        <div class="clear"></div>
+        <div class="footer">
+            <div class="footer-text">
+                <h3>Sales and Distribution Limited</h3>
+                <p>
+                    14 Collins Green Avenue,<br />
+                    Kingston 5,<br />
+                    Jamaica
+                </p>
+            </div>
+            <div class="footer-image">
+                <a href="https://manpower.odoo.com">
+                    <img src="images/1280px-Odoo_logo.svg-removebg-preview (1).png" class="odoo-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

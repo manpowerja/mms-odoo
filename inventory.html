@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inventory Tutorials</title>
+    <link type="images/x-icon" rel="icon" href="images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/purchasing.css" rel="stylesheet">
+    <script src="script/tutorials.js" type="text/javascript"></script>
+</head>
+
+<body onload="sessionInv()">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/MMS Sales and Distribution Ltd.png" alt="" class="header-logo">
+            </div>
+            <input type="checkbox" id="checky">
+            <label for="checky">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </label>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="" style="pointer-events: none">Tutorials</a>
+                        <ul>
+                            <li><a style="pointer-events: none">Receipts</a>
+                                <ul>
+                                    <li><a href="#full_recipt" target="_self">Full receival on PO</a></li>
+                                    <li><a href="#parWBack" target="_self">Partial receival with Backorder</a></li>
+                                    <li><a href="#parRWOBack" target="_self">Partial receival without Backorder</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="pointer-events: none">Deliveries</a>
+                                <ul>
+                                    <li><a href="#fulldelivery" target="_self">Full delivery on sales order</a></li>
+                                    <li><a href="#prtWdelivery" target="_self">Partial delivery with Backorder</a></li>
+                                    <li><a href="#parWOdelivery" target="_self">Partial delivery without Backorder</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a style="pointer-events: none">Returns</a>
+                                <ul>
+                                    <li><a href="#cus_statements" target="_self">Print customer statement</a></li>
+                                    <li><a href="#reg_pay_in" target="_self">Register payment to invoce</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contracts" target="_self">Contracts</a></li>
+                            <li><a href="#int_trans" target="_self">Internal Transfers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="login.html">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content-container">
+            <a href="" id="full_recipt" class="nav-links"></a>
+            <h1>Inventory Tutorials</h1>
+            <h2>Full Receival on Purchase Order</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt1.png" alt="" class="tut-images">
+                <li>Go to the receipt operation at your location.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt2.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt3.png" alt="" class="tut-images">
+                <li>Select the receival operation that corresponds with the purchase order number (From Vendor to
+                    Input).</li>
+                <img src="images/inventory/receipts/inv-fullreceipt4.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt5.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt6.png" alt="" class="tut-images">
+                <li>The pick operation has been completed.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt7.png" alt="" class="tut-images">
+                <li>Open the inventory overview tab.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt8.png" alt="" class="tut-images">
+                <li>Go to the internal transfer operation for your location.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt9.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt10.png" alt="" class="tut-images">
+                <li>Select the quality control operation that corresponds with the PO number (From Input to Quality
+                    Control).</li>
+                <img src="images/inventory/receipts/inv-fullreceipt11.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt12.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt13.png" alt="" class="tut-images">
+                <li>The quality control operation has been completed.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt14.png" alt="" class="tut-images">
+                <li>Open the inventory overview tab.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt15.png" alt="" class="tut-images">
+                <li>Go to the internal transfer operation at your location.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt16.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt17.png" alt="" class="tut-images">
+                <li>Select the receival operation that corresponds with the purchase order number (From Quality Control
+                    to Stock).</li>
+                <img src="images/inventory/receipts/inv-fullreceipt18.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt19.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-fullreceipt20.png" alt="" class="tut-images">
+                <li>Full receival from purchase order has been successfuly completed.</li>
+            </ol>
+            <a href="" id="parWBack" class="nav-links"></a>
+            <h2>Partial Recieval on Purchase Order (With BackOrder)</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/receipts/inv-parRecBack1.png" alt="" class="tut-images">
+                <li>Go to the receipt operation that corresponds with your location.</li>
+                <img src="images/inventory/receipts/inv-parRecBack2.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-parRecBack3.png" alt="" class="tut-images">
+                <li>Select the receival transaction that corresponds with the purchase order number (From vendor to
+                    input).</li>
+                <img src="images/inventory/receipts/inv-parRecBack4.png" alt="" class="tut-images">
+                <li>Click the list button next to the products.</li>
+                <img src="images/inventory/receipts/inv-parRecBack5.png" alt="" class="tut-images">
+                <li>Select the add a line tab.</li>
+                <img src="images/inventory/receipts/inv-parRecBack6.png" alt="" class="tut-images">
+                <li>Enter the amount of the product that was received.</li>
+                <img src="images/inventory/receipts/inv-parRecBack7.png" alt="" class="tut-images">
+                <li>Select the confirm button.</li>
+                <img src="images/inventory/receipts/inv-parRecBack8.png" alt="" class="tut-images">
+                <li>Repeat step 5-8 for all products.</li>
+                <img src="images/inventory/receipts/inv-parRecBack9.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-parRecBack10.png" alt="" class="tut-images">
+                <li>Click the create backorder button.</li>
+                <img src="images/inventory/receipts/inv-parRecBack11.png" alt="" class="tut-images">
+                <li>The input operation has been completed.</li>
+                <img src="images/inventory/receipts/inv-parRecBack12.png" alt="" class="tut-images">
+                <li>Click the inventory overview tab.</li>
+                <img src="images/inventory/receipts/inv-parRecBack13.png" alt="" class="tut-images">
+                <li>Go to the internal transfer operation for your location.</li>
+                <img src="images/inventory/receipts/inv-parRecBack14.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-parRecBack15.png" alt="" class="tut-images">
+                <li>Select the quality control operation that corresponds with the PO number (From Input to Quality
+                    Control).</li>
+                <img src="images/inventory/receipts/inv-parRecBack16.png" alt="" class="tut-images">
+                <li>Select the set quanities tab.</li>
+                <img src="images/inventory/receipts/inv-parRecBack17.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-parRecBack18.png" alt="" class="tut-images">
+                <li>Click the create backorder button.</li>
+                <img src="images/inventory/receipts/inv-parRecBack19.png" alt="" class="tut-images">
+                <li>The quality control operation has been completed successfully.</li>
+                <img src="images/inventory/receipts/inv-parRecBack20.png" alt="" class="tut-images">
+                <li>Open the inventory overview tab.</li>
+                <img src="images/inventory/receipts/inv-parRecBack21.png" alt="" class="tut-images">
+                <li>Go to the internal transfer operation for your location.</li>
+                <img src="images/inventory/receipts/inv-parRecBack22.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-parRecBack23.png" alt="" class="tut-images">
+                <li>Select the receival operation that corresponds with the purchase order number (From Quality Control
+                    to Stock).</li>
+                <img src="images/inventory/receipts/inv-parRecBack24.png" alt="" class="tut-images">
+                <li>Open the set quanities tab.</li>
+                <img src="images/inventory/receipts/inv-parRecBack25.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-parRecBack26.png" alt="" class="tut-images">
+                <li>Click the create backorder button.</li>
+                <img src="images/inventory/receipts/inv-parRecBack27.png" alt="" class="tut-images">
+                <li>The receival process has been completed successfully.</li>
+                <img src="images/inventory/receipts/inv-parRecBack28.png" alt="" class="tut-images">
+            </ol>
+            <a href="" id="parRWOBack" class="nav-links"></a>
+            <h2>Partial Recieval on Purchase Order (With No BackOrder)</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec1.png" alt="" class="tut-images">
+                <li>Go to the receipt operation that corresponds with your location.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec2.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec3.png" alt="" class="tut-images">
+                <li>Select the receival transaction that corresponds with the purchase order number (From vendor to
+                    input).</li>
+                <img src="images/inventory/receipts/inv-NoBackRec4.png" alt="" class="tut-images">
+                <li>Click the list button next to the products.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec5.png" alt="" class="tut-images">
+                <li>Select the add a line tab.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec6.png" alt="" class="tut-images">
+                <li>Enter the amount of the product that was received.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec7.png" alt="" class="tut-images">
+                <li>Select the confirm button.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec8.png" alt="" class="tut-images">
+                <li>Repeat step 5-8 for all products.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec9.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec10.png" alt="" class="tut-images">
+                <li>Click the no backorder button.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec11.png" alt="" class="tut-images">
+                <li>The input operation has been completed.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec12.png" alt="" class="tut-images">
+                <li>Click the inventory overview tab.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec13.png" alt="" class="tut-images">
+                <li>Go to the internal transfer operation for your location.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec14.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec15.png" alt="" class="tut-images">
+                <li>Select the quality control transfer that corresponds with the PO number (From Input to Quality
+                    Control).</li>
+                <img src="images/inventory/receipts/inv-NoBackRec16.png" alt="" class="tut-images">
+                <li>Select the set quanities tab.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec17.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec18.png" alt="" class="tut-images">
+                <li>Click the no backorder button.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec19.png" alt="" class="tut-images">
+                <li>The quality control operation has been completed successfully.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec20.png" alt="" class="tut-images">
+                <li>Open the inventory overview tab.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec21.png" alt="" class="tut-images">
+                <li>Go to the internal transfer operation for your location.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec22.png" alt="" class="tut-images">
+                <li>Search for the purchase order number the recieval is to be done on.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec23.png" alt="" class="tut-images">
+                <li>Select the receival operation that corresponds with the purchase order number (From Quality Control
+                    to Stock).</li>
+                <img src="images/inventory/receipts/inv-NoBackRec24.png" alt="" class="tut-images">
+                <li>Open the set quanities tab.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec25.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec26.png" alt="" class="tut-images">
+                <li>Click the no backorder button.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec27.png" alt="" class="tut-images">
+                <li>The recieval process has been completed successfully.</li>
+                <img src="images/inventory/receipts/inv-NoBackRec28.png" alt="" class="tut-images">
+            </ol>
+            <a href="" id="fulldelivery" class="nav-links"></a>
+            <h2>Full Delivery on Non-Contractual Sales Order</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/deliveries/inv-del-full1.png" class="tut-images">
+                <li>Go to the pick operation at your warehouse.</li>
+                <img src="images/inventory/deliveries/inv-del-full2.png" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-full3.png" class="tut-images">
+                <li>Select the pick operation (From Stock to Packing Zone).</li>
+                <img src="images/inventory/deliveries/inv-del-full4.png" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/deliveries/inv-del-full5.png" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-full6.png" class="tut-images">
+                <li>Pick operation has been completed.</li>
+                <img src="images/inventory/deliveries/inv-del-full7.png" class="tut-images">
+                <li>Go to the inventory overview tab.</li>
+                <img src="images/inventory/deliveries/inv-del-full8.png" class="tut-images">
+                <li>Go to the pack operation of your location.</li>
+                <img src="images/inventory/deliveries/inv-del-full9.png" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-full10.png" class="tut-images">
+                <li>Click the pack operation (From Packing Zone to Output).</li>
+                <img src="images/inventory/deliveries/inv-del-full11.png" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/deliveries/inv-del-full12.png" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-full13.png" class="tut-images">
+                <li>Pack operation has been completed.</li>
+                <img src="images/inventory/deliveries/inv-del-full14.png" class="tut-images">
+                <li>Open the Inventory Overview tab.</li>
+                <img src="images/inventory/deliveries/inv-del-full15.png" class="tut-images">
+                <li>Go to the delivery orders operation that corresponds with your location.</li>
+                <img src="images/inventory/deliveries/inv-del-full16.png" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-full17.png" class="tut-images">
+                <li>Select the delivery operation (From Ouput to Customers)</li>
+                <img src="images/inventory/deliveries/inv-del-full18.png" class="tut-images">
+                <li>Select the set quanities tab.</li>
+                <img src="images/inventory/deliveries/inv-del-full19.png" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-full20.png" class="tut-images">
+                <li>Click the print button.</li>
+                <img src="images/inventory/deliveries/inv-del-full21.png" class="tut-images">
+                <li>Slect the delivery slip option and save document.</li>
+                <img src="images/inventory/deliveries/inv-del-full22.png" class="tut-images">
+                <li>Fulll delivery has been successfully completed.</li>
+                <img src="images/inventory/deliveries/inv-del-full24.png" class="tut-images">
+            </ol>
+            <a href="" id="prtWdelivery" class="nav-links"></a>
+            <h2>Partial Delivery on Non-Contractual Sales Order (With Backorder)</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack1.png" alt="" class="tut-images">
+                <li>Go to the pick operation that corresponds with your location.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack2.png" alt="" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack3.png" alt="" class="tut-images">
+                <li>Select the pick operation (From Stock to Packing Zone)</li>
+                <img src="images/inventory/deliveries/inv-del-parBack4.png" alt="" class="tut-images">
+                <li>Click the done column for the products.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack5.png" alt="" class="tut-images">
+                <li>Enter the amount that will be delivered on this delivery in the done column.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack6.png" alt="" class="tut-images">
+                <li>Enter the done quantity for all products.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack7.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack0.png" alt="" class="tut-images">
+                <!-- Need image -->
+                <li>Click the create backorder button.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack8.png" alt="" class="tut-images">
+                <li>Pick process has been completed.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack9.png" alt="" class="tut-images">
+                <li>Click the inventory overview tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack10.png" alt="" class="tut-images">
+                <li>Go to the pack operation that corresponds with your location.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack11.png" alt="" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack12.png" alt="" class="tut-images">
+                <li>Select the packing operation that corresponds with sales order number (From Packing Zone to Output).
+                </li>
+                <img src="images/inventory/deliveries/inv-del-parBack13.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack14.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack15.png" alt="" class="tut-images">
+                <li>Click the create backorder button.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack16.png" alt="" class="tut-images">
+                <li>Packing operation has been completed.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack17.png" alt="" class="tut-images">
+                <li>Click the inventory overview tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack18.png" alt="" class="tut-images">
+                <li>Go to the delivery orders operation for your location.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack19.png" alt="" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack20.png" alt="" class="tut-images">
+                <li>Select the delivery operation that corresponds with requested sales order (From output to customer)
+                </li>
+                <img src="images/inventory/deliveries/inv-del-parBack21.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack22.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack23.png" alt="" class="tut-images">
+                <li>Click the create backorder button.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack24.png" alt="" class="tut-images">
+                <li>Click the print button.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack25.png" alt="" class="tut-images">
+                <li>Select the delivery slip option and save delivery slip.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack26.png" alt="" class="tut-images">
+                <li>Partial devlivery with back order has been successfully completed.</li>
+                <img src="images/inventory/deliveries/inv-del-parBack28.png" alt="" class="tut-images">
+            </ol>
+            <a href="" id="parWOdelivery" class="nav-links"></a>
+            <h2>Partial Delivery on Non-Contractual Sales Orders (With No Backorder)</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack1.png" alt="" class="tut-images">
+                <li>Go to the pick operation that corresponds with your location.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack2.png" alt="" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack3.png" alt="" class="tut-images">
+                <li>Select the pick operation (From Stock to Packing Zone)</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack4.png" alt="" class="tut-images">
+                <li>Click the done column for the products.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack5.png" alt="" class="tut-images">
+                <li>Enter the amount that will be delivered on this delivery in the done column.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack0.png" alt="" class="tut-images">
+                <li>Enter the done quantity for all products.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack6.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack00.png" alt="" class="tut-images">
+                <li>Click the no backorder button.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack7.png" alt="" class="tut-images">
+                <li>Pick process has been completed.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack8.png" alt="" class="tut-images">
+                <li>Click the inventory overview tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack9.png" alt="" class="tut-images">
+                <li>Go to the pack operation that corresponds with your location.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack11.png" alt="" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack12.png" alt="" class="tut-images">
+                <li>Select the packing operation that corresponds with sales order number (From Packing Zone to Output).
+                </li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack13.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack14.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack15.png" alt="" class="tut-images">
+                <li>Click the no backorder button.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack16.png" alt="" class="tut-images">
+                <li>Packing operation has been completed.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack17.png" alt="" class="tut-images">
+                <li>Click the inventory overview tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack18.png" alt="" class="tut-images">
+                <li>Go to the delivery orders operation for your location.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack19.png" alt="" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack20.png" alt="" class="tut-images">
+                <li>Select the delivery operation that corresponds with requested sales order (From output to customer)
+                </li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack21.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack22.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack23.png" alt="" class="tut-images">
+                <li>Click the no backorder button.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack24.png" alt="" class="tut-images">
+                <li>Click the print button.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack25.png" alt="" class="tut-images">
+                <li>Select the delivery slip option and save delivery slip.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack26.png" alt="" class="tut-images">
+                <li>Partial devlivery with back order has been successfully completed.</li>
+                <img src="images/inventory/deliveries/inv-del-parNoBack28.png" alt="" class="tut-images">
+            </ol>
+            <a href="" id="returns-salesorder" class="nav-links"></a>
+            <h2>Return on delivery on sales order</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/returns/inv-return-so1.png" alt="" class="tut-images">
+                <li>Open the delivery orders operation for your location.</li>
+                <img src="images/inventory/returns/inv-return-so2.png" alt="" class="tut-images">
+                <li>Remove the ready filter from the search bar.</li>
+                <img src="images/inventory/returns/inv-return-so3.png" alt="" class="tut-images">
+                <li>Search for the sales order number return is to be done on.</li>
+                <img src="images/inventory/returns/inv-return-so4.png" alt="" class="tut-images">
+                <li>Select the delivery operation that return is to be done on (From Output to Customer)</li>
+                <img src="images/inventory/returns/inv-return-so5.png" alt="" class="tut-images">
+                <li>Select the return tab.</li>
+                <img src="images/inventory/returns/inv-return-so6.png" alt="" class="tut-images">
+                <li>Enter the quanity to be returned for each product.</li>
+                <img src="images/inventory/returns/inv-return-so7.png" alt="" class="tut-images">
+                <li>Click the return button.</li>
+                <img src="images/inventory/returns/inv-return-so8.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/returns/inv-return-so9.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/returns/inv-return-so10.png" alt="" class="tut-images">
+                <li>Return on the delivery order process has been completed.</li>
+                <img src="images/inventory/returns/inv-return-so11.png" alt="" class="tut-images">
+                <li>Open the inventory overview tab.</li>
+                <img src="images/inventory/returns/inv-return-so12.png" alt="" class="tut-images">
+                <li>Go to the pack operation for your location.</li>
+                <img src="images/inventory/returns/inv-return-so13.png" alt="" class="tut-images">
+                <li>Remove the ready filter from the search bar.</li>
+                <img src="images/inventory/returns/inv-return-so14.png" alt="" class="tut-images">
+                <li>Search for the sales order number return is to be done on.</li>
+                <img src="images/inventory/returns/inv-return-so15.png" alt="" class="tut-images">
+                <li>Select the pack operation that return is to be done on (From Packing Zone to Output)</li>
+                <img src="images/inventory/returns/inv-return-so16.png" alt="" class="tut-images">
+                <li>Select the return tab.</li>
+                <img src="images/inventory/returns/inv-return-so17.png" alt="" class="tut-images">
+                <li>Enter the quanity to be returned for each product.</li>
+                <img src="images/inventory/returns/inv-return-so18.png" alt="" class="tut-images">
+                <li>Click the return button.</li>
+                <img src="images/inventory/returns/inv-return-so19.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/returns/inv-return-so20.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/returns/inv-return-so21.png" alt="" class="tut-images">
+                <li>Return on the packing process has been completed.</li>
+                <img src="images/inventory/returns/inv-return-so22.png" alt="" class="tut-images">
+                <li>Open the inventory overview tab.</li>
+                <img src="images/inventory/returns/inv-return-so23.png" alt="" class="tut-images">
+                <li>Open the pick operation for your location.</li>
+                <img src="images/inventory/returns/inv-return-so24.png" alt="" class="tut-images">
+                <li>Remove the ready filter from the search bar.</li>
+                <img src="images/inventory/returns/inv-return-so25.png" alt="" class="tut-images">
+                <li>Search for the sales order number return is to be done on.</li>
+                <img src="images/inventory/returns/inv-return-so26.png" alt="" class="tut-images">
+                <li>Select the pick operation that return is to be done on (From Stock to Packing Zone).</li>
+                <img src="images/inventory/returns/inv-return-so27.png" alt="" class="tut-images">
+                <li>Select the return tab.</li>
+                <img src="images/inventory/returns/inv-return-so28.png" alt="" class="tut-images">
+                <li>Enter the quanity to be returned for each product.</li>
+                <img src="images/inventory/returns/inv-return-so29.png" alt="" class="tut-images">
+                <li>Click the return button.</li>
+                <img src="images/inventory/returns/inv-return-so30.png" alt="" class="tut-images">
+                <li>Click the set quanities tab.</li>
+                <img src="images/inventory/returns/inv-return-so31.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/returns/inv-return-so32.png" alt="" class="tut-images">
+                <li>Return process has been completed.</li>
+                <img src="images/inventory/returns/inv-return-so33.png" alt="" class="tut-images">
+            </ol>
+            <h2>Return on receipts on a purchase order</h2>
+            <ol>
+                <li>Open the inventory module.</li>
+                <img src="images/inventory/returns/inv-return-po1.png" class="tut-images">
+                <li>Open the internal transfers operation for your location.</li>
+                <img src="images/inventory/returns/inv-return-po2.png" class="tut-images">
+                <li>Remove the ready filter from the search bar.</li>
+                <img src="images/inventory/returns/inv-return-po3.png" class="tut-images">
+                <li>Search for the purchase order number return is to be done on.</li>
+                <img src="images/inventory/returns/inv-return-po4.png" class="tut-images">
+                <li>Select the quality operation that return should be done on (From Quality Control to Stock).</li>
+                <img src="images/inventory/returns/inv-return-po5.png" class="tut-images">
+                <li>Select the return tab.</li>
+                <img src="images/inventory/returns/inv-return-po6.png" class="tut-images">
+                <li>Enter the quanity to be returned for each product.</li>
+                <img src="images/inventory/returns/inv-return-po7.png" class="tut-images">
+                <li>Click the return button.</li>
+                <img src="images/inventory/returns/inv-return-po8.png" class="tut-images">
+                <li>Select the set quanities tab.</li>
+                <img src="images/inventory/returns/inv-return-po9.png" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/returns/inv-return-po10.png" class="tut-images">
+                <li>The return on the quality operation has been completed.</li>
+                <img src="images/inventory/returns/inv-return-po11.png" class="tut-images">
+                <li>Open the internal transfers transfers tab.</li>
+                <img src="images/inventory/returns/inv-return-po12.png" class="tut-images">
+                <li>Select the Input operation that return is to be done on (From Input to Quality Control)</li>
+                <img src="images/inventory/returns/inv-return-po13.png" class="tut-images">
+                <li>Select the return tab.</li>
+                <img src="images/inventory/returns/inv-return-po14.png" class="tut-images">
+                <li>Enter the quanity to be returned for each product.</li>
+                <img src="images/inventory/returns/inv-return-po15.png" class="tut-images">
+                <li>Click the return buitton.</li>
+                <img src="images/inventory/returns/inv-return-po16.png" class="tut-images">
+                <li>Select the set quanities tab.</li>
+                <img src="images/inventory/returns/inv-return-po17.png" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/returns/inv-return-po18.png" class="tut-images">
+                <li>The return on the Input operation has been completed.</li>
+                <img src="images/inventory/returns/inv-return-po19.png" class="tut-images">
+                <li>Select the inventory overview tab.</li>
+                <img src="images/inventory/returns/inv-return-po20.png" class="tut-images">
+                <li>Open the receipts operation for your location.</li>
+                <img src="images/inventory/returns/inv-return-po21.png" class="tut-images">
+                <li>Remove the ready filter from the search bar.</li>
+                <img src="images/inventory/returns/inv-return-po22.png" class="tut-images">
+                <li>Search for the purchase order number that return is to be done on.</li>
+                <img src="images/inventory/returns/inv-return-po23.png" class="tut-images">
+                <li>Select the receipts operation reurn is to be done on.</li>
+                <img src="images/inventory/returns/inv-return-po24.png" class="tut-images">
+                <li>Select the return tab.</li>
+                <img src="images/inventory/returns/inv-return-po25.png" class="tut-images">
+                <li>Enter the quantity to be returned for each product.</li>
+                <img src="images/inventory/returns/inv-return-po26.png" class="tut-images">
+                <li>Click the return button.</li>
+                <img src="images/inventory/returns/inv-return-po27.png" class="tut-images">
+                <li>Select the set quanities tab.</li>
+                <img src="images/inventory/returns/inv-return-po28.png" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/returns/inv-return-po29.png" class="tut-images">
+                <li>Return on purchase orders has been completed.</li>
+                <img src="images/inventory/returns/inv-return-po30.png" class="tut-images">
+            </ol>
+            <a href="" id="contracts" class="nav-links"></a>
+            <h2>Delivery on Contract Sales Orders (Billable and Non-Billable)</h2>
+            <ol>
+                <li>Go to the sales module.</li>
+                <img src="images/inventory/contracts/inv-contracts1.png" alt="" class="tut-images">
+                <li>Clear the My Quotation filter in the search bar.</li>
+                <img src="images/inventory/contracts/inv-contracts2.png" alt="" class="tut-images">
+                <li>Search for the sales order number for the contract sale delivery is to be done on.</li>
+                <img src="images/inventory/contracts/inv-contracts3.png" alt="" class="tut-images">
+                <li>Click the sales order that corresponds with the sales order number.</li>
+                <img src="images/inventory/contracts/inv-contracts4.png" alt="" class="tut-images">
+                <li>Make note of the items on the sales order.</li>
+                <img src="images/inventory/contracts/inv-contracts5.png" alt="" class="tut-images">
+                <li>Go to the dashboard.</li>
+                <img src="images/inventory/contracts/inv-contracts6.png" alt="" class="tut-images">
+                <li>Go to the inventory module.</li>
+                <img src="images/inventory/contracts/inv-contracts7.png" alt="" class="tut-images">
+                <li>Click the three dots on the internal transfer for your loaction.</li>
+                <img src="images/inventory/contracts/inv-contracts8.png" alt="" class="tut-images">
+                <li>Select the planned transfer option (To be done based on sales order in step 5).</li>
+                <img src="images/inventory/contracts/inv-contracts9.png" alt="" class="tut-images">
+                <li>Select the add a line link.</li>
+                <img src="images/inventory/contracts/inv-contracts10.png" alt="" class="tut-images">
+                <li>Fill out all the relevant information for each product (product, demand, unit of measure).</li>
+                <img src="images/inventory/contracts/inv-contracts11.png" alt="" class="tut-images">
+                <li>Add all the products needed to fulfil contract sales order.</li>
+                <img src="images/inventory/contracts/inv-contracts12.png" alt="" class="tut-images">
+                <li>Add the contact.</li>
+                <img src="images/inventory/contracts/inv-contracts13.png" alt="" class="tut-images">
+                <li>Change the destination location to the manpower contracts location for your warehouse.</li>
+                <img src="images/inventory/contracts/inv-contracts14.png" alt="" class="tut-images">
+                <li>Click the save button.</li>
+                <img src="images/inventory/contracts/inv-contracts15.png" alt="" class="tut-images">
+                <li>Click the mark as todo button.</li>
+                <img src="images/inventory/contracts/inv-contracts16.png" alt="" class="tut-images">
+                <li>Click the set quantities tab.</li>
+                <img src="images/inventory/contracts/inv-contracts17.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/contracts/inv-contracts18.png" alt="" class="tut-images">
+                <li>Click the inventory overview tab.</li>
+                <img src="images/inventory/contracts/inv-contracts19.png" alt="" class="tut-images">
+                <li>Go to the manpower contracts operation for your location.</li>
+                <img src="images/inventory/contracts/inv-contracts20.png" alt="" class="tut-images">
+                <li>Clear the ready filter from search bar.</li>
+                <img src="images/inventory/contracts/inv-contracts21.png" alt="" class="tut-images">
+                <li>Search for the sales order number delivery is to be done on.</li>
+                <img src="images/inventory/contracts/inv-contracts22.png" alt="" class="tut-images">
+                <li>Select the delivery operation that corresponds with requested sales order.</li>
+                <img src="images/inventory/contracts/inv-contracts23.png" alt="" class="tut-images">
+                <li>Click the check availability button.</li>
+                <img src="images/inventory/contracts/inv-contracts24.png" alt="" class="tut-images">
+                <li>Click the set quantities tab.</li>
+                <img src="images/inventory/contracts/inv-contracts25.png" alt="" class="tut-images">
+                <li>Click the validate button.</li>
+                <img src="images/inventory/contracts/inv-contracts26.png" alt="" class="tut-images">
+                <li>Click the print button.</li>
+                <img src="images/inventory/contracts/inv-contracts27.png" alt="" class="tut-images">
+                <li>Select the delivery slip option and save document.</li>
+                <img src="images/inventory/contracts/inv-contracts28.png" alt="" class="tut-images">
+                <li>The delivery on the constract sales order has been successfully completed.</li>
+                <img src="images/inventory/contracts/inv-contracts30.png" alt="" class="tut-images">
+            </ol>
+            <a id="int_trans" class="nav-links"></a>
+            <h2>Internal Transfer to another location</h2>
+            <ol>
+                <li>Go to the inventory module.</li>
+                <img src="images/inventory/inv-transfer1.png" alt="" class="tut-images">
+                <li>Click the three dots on the internal transfer operation of location <b>ITEMS ARE GOING TO</b>.</li>
+                <img src="images/inventory/inv-transfer2.png" alt="" class="tut-images">
+                <li>Select the planned transfer option.</li>
+                <img src="images/inventory/inv-transfer3.png" alt="" class="tut-images">
+                <li>Select the add a line link.</li>
+                <img src="images/inventory/inv-transfer4.png" alt="" class="tut-images">
+                <li>Fill all the relevant fields(product, demand, unit of measurement)</li>
+                <img src="images/inventory/inv-transfer5.png" alt="" class="tut-images">
+                <li>Add all the products that is to be transferred to the other location.</li>
+                <img src="images/inventory/inv-transfer6.png" alt="" class="tut-images">
+                <li>Select the contact and source location. The source location should be the stock location for your
+                    warehouse.</li>
+                <img src="images/inventory/inv-transfer7.png" alt="" class="tut-images">
+                <li>Click the save button.</li>
+                <img src="images/inventory/inv-transfer8.png" alt="" class="tut-images">
+                <li>Click the mark as todo button.</li>
+                <img src="images/inventory/inv-transfer9.png" alt="" class="tut-images">
+                <li>Click the set quanities tabs.</li>
+                <img src="images/inventory/inv-transfer10.png" alt="" class="tut-images">
+                <li>Select the validate button.</li>
+                <img src="images/inventory/inv-transfer11.png" alt="" class="tut-images">
+                <li>Select the print button.</li>
+                <img src="images/inventory/inv-transfer12.png" alt="" class="tut-images">
+                <li>Select the delivery slip option and save document.</li>
+                <img src="images/inventory/inv-transfer13.png" alt="" class="tut-images">
+                <li>Internal transfer has been completed successfully.</li>
+            </ol>
+        </div>
+        <a href="tutorialdocs/Inventory.pdf" download class="choplawd">
+            <div class="download">
+                <div class="d-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                </div>
+                <div class="d-text">
+                    <span id="spanAdd">Additional Manuals</span>
+                </div>
+            </div>
+        </a>
+        <div class="clear2"></div>
+        <div class="footer">
+            <div class="footer-text">
+                <h3>Sales and Distribution Limited</h3>
+                <p>
+                    14 Collins Green Avenue,<br />
+                    Kingston 5,<br />
+                    Jamaica
+                </p>
+            </div>
+            <div class="footer-image">
+                <a href="https://manpower.odoo.com">
+                    <img src="images/1280px-Odoo_logo.svg-removebg-preview (1).png" class="odoo-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

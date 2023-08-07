@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sales Tutorials</title>
+    <link href="style/purchasing.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <script src="script/tutorials.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="sessionSales()">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/MMS Sales and Distribution Ltd.png" alt="" class="header-logo">
+            </div>
+            <input type="checkbox" id="checky">
+            <label for="checky">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </label>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="" style="pointer-events: none">Tutorials</a>
+                        <ul>
+                            <li><a href="#non_con_so" target="_self">Create Non-Contractual SO</a></li>
+                            <li><a href="#billable" target="_self">Create Billable SO</a></li>
+                            <li><a href="#non_bill_so" target="_self">Create Non-Billable SO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="login.html">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content-container">
+            <h1>Sales Tutorials</h1>
+            <a id="non_con_so" class="nav-links"></a>
+            <h2>Create Non-Contractual sales order</h2>
+            <ol>
+                <li>Open the sales module.</li>
+                <img src="images/sales/sales-so1.png" alt="" class="tut-images">
+                <li>Click create to create quotation.</li>
+                <img src="images/sales/sales-so2.png" alt="" class="tut-images">
+                <li>Fill in all relevant fields (customer, invoice and delivery address).</li>
+                <img src="images/sales/sales-so3.png" alt="" class="tut-images">
+                <li>Click add product to add each product.</li>
+                <img src="images/sales/sales-so4.png" alt="" class="tut-images">
+                <li>Fill out all relevant fields for each product.</li>
+                <img src="images/sales/sales-so5.png" alt="" class="tut-images">
+                <li>Click save to create quotation.</li>
+                <img src="images/sales/sales-so6.png" alt="" class="tut-images">
+                <li>Confirm quotation to create sales order.</li>
+                <img src="images/sales/sales-so7.png" alt="" class="tut-images">
+                <li>Sales Order has been sucessfully created.</li>
+                <img src="images/sales/sales-so8.png" alt="" class="tut-images">
+            </ol>
+            <a id="billable" class="nav-links"></a>
+            <h2>Create Billable Sales Orders</h2>
+            <ol>
+                <li>Open the sales module</li>
+                <img src="images/sales/sales-bs1.png" class="tut-images">
+                <li>Click create to create quotation.</li>
+                <img src="images/sales/sales-bs2.png" class="tut-images">
+                <li>Select Manpower and Maintainence Services Ltd. for the customer and invoice address.</li>
+                <img src="images/sales/sales-bs3.png" class="tut-images">
+                <li>Select contract client as deliver address.</li>
+                <img src="images/sales/sales-bs4.png" class="tut-images">
+                <li>Select Billable Contracts pricelist.</li>
+                <img src="images/sales/sales-bs5.png" class="tut-images">
+                <li>Go to Other Info.</li>
+                <img src="images/sales/sales-bs0.png" class="tut-images">
+                <li>Add Tag in the following format: Client Name/Branch/Billable</li>
+                <img src="images/sales/sales-bs6.png" class="tut-images">
+                <li>Add customer reference (the purchase requistion number from the client)</li>
+                <img src="images/sales/sales-bs7.png" class="tut-images">
+                <li>Go back to Order Lines and click on the three dots.</li>
+                <img src="images/sales/sales-bs9.png" class="tut-images">
+                <li>Add the route column.</li>
+                <img src="images/sales/sales-bs10.png" class="tut-images">
+                <li>Click add product for each product.</li>
+                <img src="images/sales/sales-bs8.png" class="tut-images">
+                <li>Fill out all relevant fields (product, quantity, unit of measure, route). Route should be selected
+                    in accordance with your warehouse.</li>
+                <img src="images/sales/sales-bs11.png" class="tut-images">
+                <li>Ensure the route is selected for all products.</li>
+                <img src="images/sales/sales-bs12.png" class="tut-images">
+                <li>Click Save to create quotation.</li>
+                <img src="images/sales/sales-bs13.png" class="tut-images">
+                <li>Click confirm to create sales order.</li>
+                <img src="images/sales/sales-bs14.png" class="tut-images">
+                <li>Billable Sales Order has been successfully created.</li>
+                <img src="images/sales/sales-bs15.png" class="tut-images">
+            </ol>
+            <a href="" id="non_bill_so" class="nav-links"></a>
+            <h2>Create Non-Billable Sales Orders</h2>
+            <ol>
+                <li>Open the sales module.</li>
+                <img src="images/sales/sales-nbs1.png" class="tut-images">
+                <li>Click create to create quotation.</li>
+                <img src="images/sales/sales-nbs2.png" class="tut-images">
+                <li>Select Manpower and Maintainence Services Ltd. for the customer and invoice address.</li>
+                <img src="images/sales/sales-nbs3.png" class="tut-images">
+                <li>Select contract client as deliver address.</li>
+                <img src="images/sales/sales-nbs4.png" class="tut-images">
+                <li>Select Non-Billable Contracts pricelist.</li>
+                <img src="images/sales/sales-nbs5.png" class="tut-images">
+                <li>Go to Other Info.</li>
+                <img src="images/sales/sales-nbs0.png" class="tut-images">
+                <li>Add Tag in the following format: Client Name/Branch/Non-Billable</li>
+                <img src="images/sales/sales-nbs6.png" class="tut-images">
+                <li>Add customer reference (the purchase requistion number from the client)</li>
+                <img src="images/sales/sales-nbs7.png" class="tut-images">
+                <li>Go back to Order Lines and click on the three dots.</li>
+                <img src="images/sales/sales-nbs8.png" class="tut-images">
+                <li>Add the route column.</li>
+                <img src="images/sales/sales-nbs9.png" class="tut-images">
+                <li>Click add product for each product.</li>
+                <img src="images/sales/sales-nbs10.png" class="tut-images">
+                <li>Fill out all relevant fields (product, quantity, unit of measure, route). Route should be selected
+                    in accordance with your warehouse.</li>
+                <img src="images/sales/sales-nbs11.png" class="tut-images">
+                <li>Ensure the route is selected for all products.</li>
+                <img src="images/sales/sales-nbs12.png" class="tut-images">
+                <li>Click Save to create quotation.</li>
+                <img src="images/sales/sales-nbs13.png" class="tut-images">
+                <li>Click confirm to create sales order.</li>
+                <img src="images/sales/sales-nbs14.png" class="tut-images">
+                <li>Non-Billable Sales Order has been successfully created.</li>
+                <img src="images/sales/sales-nbs15.png" class="tut-images">
+            </ol>
+        </div>
+        <a href="tutorialdocs/Sales.pdf" download class="choplawd">
+            <div class="download">
+                <div class="d-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                </div>
+                <div class="d-text">
+                    <span id="spanAdd">Additional Manuals</span>
+                </div>
+            </div>
+        </a>
+
+        <div class="clear2"></div>
+        <div class="footer">
+            <div class="footer-text">
+                <h3>Sales and Distribution Limited</h3>
+                <p>
+                    14 Collins Green Avenue,<br />
+                    Kingston 5,<br />
+                    Jamaica
+                </p>
+            </div>
+            <div class="footer-image">
+                <a href="https://manpower.odoo.com">
+                    <img src="images/1280px-Odoo_logo.svg-removebg-preview (1).png" class="odoo-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

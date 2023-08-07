@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Accounting Tutorials</title>
+    <link href="style/purchasing.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <script src="script/tutorials.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="sessionAcc()">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/MMS Sales and Distribution Ltd.png" alt="" class="header-logo">
+            </div>
+            <input type="checkbox" id="checky">
+            <label for="checky">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </label>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="" style="pointer-events: none">Tutorials</a>
+                        <ul>
+                            <li><a style="pointer-events: none">Billing</a>
+                                <ul>
+                                    <li><a href="#create_inv" target="_self">Create invoice</a></li>
+                                    <li><a href="#inv_mul_so" target="_self">Create inv. with multiple SO</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="pointer-events: none">Payables</a>
+                                <ul>
+                                    <li><a href="#create_bill" target="_self">Create a bill</a></li>
+                                    <li><a href="#merge_bills" target="_self">Merge multiple bills</a></li>
+                                    <li><a href="#reg_pay_bill" target="_self">Register payment to bill</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="pointer-events: none">Collections</a>
+                                <ul>
+                                    <li><a href="#cus_statements" target="_self">Print customer statement</a></li>
+                                    <li><a href="#reg_pay_in" target="_self">Register payment to invoce</a></li>
+                                    <li><a href="#reg_pay_w_inv" target="_self">Register payment without invoice</a></li>
+                                    <li><a href="#reg_unapplied" target="_self">Register unapplied payment to invoices</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#gen_recon" target="_self">General recon</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="login.html">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content-container">
+            <h1>Accounting Tutorials</h1>
+            <a id="create_inv" class="nav-links"></a>
+            <h2>Crete an invoice</h2>
+            <ol>
+                <li>Open Sales module.</li>
+                <img src="images/accounting/accounts-invoice1.png" class="tut-images">
+                <li>Remove the "My Quotation" filter from search bar.</li>
+                <img src="images/accounting/accounts-invoice2.png" class="tut-images">
+                <li>Search for the Sales Order that relates to the invoice to be created.</li>
+                <img src="images/accounting/accounts-invoice3.png" class="tut-images">
+                <li>Click on the sales order.</li>
+                <img src="images/accounting/accounts-invoice4.png" class="tut-images">
+                <li>Click the create invoice button.</li>
+                <img src="images/accounting/accounts-invoice5.png" class="tut-images">
+                <li>Click create and view invoice.</li>
+                <img src="images/accounting/accounts-invoice6.png" class="tut-images">
+                <li>Review Invoice.</li>
+                <img src="images/accounting/accounts-invoice7.png" class="tut-images">
+                <li>Click confirm.</li>
+                <img src="images/accounting/accounts-invoice8.png" class="tut-images">
+                <li>Invoice has been successfully created.</li>
+                <img src="images/accounting/accounts-invoice9.png" class="tut-images">
+            </ol>
+            <a id="inv_mul_so" class="nav-links"></a>
+            <h2>Create one invoice from multiple sales orders (Same customer).</h2>
+            <ol>
+                <li>Open the sales module.</li>
+                <img src="images/accounting/accounts-mergeinvoices1.png" class="tut-images">
+                <li>Click on the to invoice tab.</li>
+                <img src="images/accounting/accounts-mergeinvoices2.png" class="tut-images">
+                <li>Click on orders to invoice.</li>
+                <img src="images/accounting/accounts-mergeinvoices3.png" class="tut-images">
+                <li>Click the checkboxes beside sales order that should be merged to create a single invoice.</li>
+                <img src="images/accounting/accounts-mergeinvoices4.png" class="tut-images">
+                <li>Click on the action button.</li>
+                <img src="images/accounting/accounts-mergeinvoices5.png" class="tut-images">
+                <li>Click on the create invoices option.</li>
+                <img src="images/accounting/accounts-mergeinvoices6.png" class="tut-images">
+                <li>Click on the create and view invoice button.</li>.
+                <img src="images/accounting/accounts-mergeinvoices7.png" class="tut-images">
+                <li>Review the invoice.</li>
+                <img src="images/accounting/accounts-mergeinvoices8.png" class="tut-images">
+                <li>Click on the confirm button.</li>
+                <img src="images/accounting/accounts-mergeinvoices9.png" class="tut-images">
+                <li>Invoice has been successfully created from multiple invoices.</li>
+                <!-- Maybe needs an image -->
+            </ol>
+            <a id="create_bill" class="nav-links"></a>
+            <h2>Create a bill</h2>
+            <ol>
+                <li>Open the accounting module.</li>
+                <img src="images/accounting/accounts-cbill1.png" class="tut-images">
+                <li>Select the purchase order to be used to reference bill.</li>
+                <img src="images/accounting/accounts-cbill2.png" class="tut-images">
+                <li>Click the create bill button.</li>
+                <img src="images/accounting/accounts-cbill3.png" class="tut-images">
+                <li>Click the edit button.</li>
+                <img src="images/accounting/accounts-cbill4.png" class="tut-images">
+                <li>Enter the relevant fields (Bill Date etc.)</li>
+                <img src="images/accounting/accounts-cbill5.png" class="tut-images">
+                <li>Review the bill.</li>
+                <img src="images/accounting/accounts-cbill6.png" class="tut-images">
+                <li>Click the save button</li>
+                <img src="images/accounting/accounts-cbill7.png" class="tut-images">
+                <li>Click the confirm button.</li>
+                <img src="images/accounting/accounts-cbill8.png" class="tut-images">
+                <li>Bill has been successfully created.</li>
+                <img src="images/accounting/accounts-cbill9.png" class="tut-images">
+            </ol>
+            <a id="merge_bills" class="nav-links"></a>
+            <h2>Merge multiple vendor bills</h2>
+            <ol>
+                <li>Open the purchasing module</li>
+                <img src="images/accounting/accounts-mergebills1.png" class="tut-images">
+                <li>Search by vendor name.</li>
+                <img src="images/accounting/accounts-mergebills2.png" class="tut-images">
+                <li>Identify purchase orders that bills should be merged from.</li>
+                <img src="images/accounting/accounts-mergebills3.png" class="tut-images">
+                <li>Select one of the purchae orders</li>
+                <img src="images/accounting/accounts-mergebills4.png" class="tut-images">
+                <li>Click create bill.</li>
+                <img src="images/accounting/accounts-mergebills5.png" class="tut-images">
+                <li>Click edit.</li>
+                <img src="images/accounting/accounts-mergebills6.png" class="tut-images">
+                <li>Fill the auto-complete field with the other purchase order number and press enter.</li>
+                <img src="images/accounting/accounts-mergebills7.png" class="tut-images">
+                <li>Enter the bill date.</li>
+                <img src="images/accounting/accounts-mergebills8.png" class="tut-images">
+                <li>Click confirm.</li>
+                <img src="images/accounting/accounts-mergebills9.png" class="tut-images">
+                <li>Click the save button.</li>
+                <img src="images/accounting/accounts-mergebills10.png" class="tut-images">
+                <li>Bills have successfully been merged.</li>
+            </ol>
+            <a id="cus_statements" class="nav-links"></a>
+            <h2>Print customer statement (recievables listing)</h2>
+            <ol>
+                <li>Open the contacts module</li>
+                <img src="images/accounting/accounts-recreport1.png" class="tut-images">
+                <li>Search for the customer for which report is wanted.</li>
+                <img src="images/accounting/accounts-recreport2.png" class="tut-images">
+                <li>Select customer.</li>
+                <img src="images/accounting/accounts-recreport3.png" class="tut-images">
+                <li>Select the due amount.</li>
+                <img src="images/accounting/accounts-recreport4.png" class="tut-images">
+                <li>Click print letter.</li>
+                <img src="images/accounting/accounts-recreport5.png" class="tut-images">
+                <li>Save customer statement.</li>
+                <img src="images/accounting/accounts-recreport6.png" class="tut-images">
+                <li>Customer statement has been successfuly saved.</li>
+            </ol>
+            <a id="reg_pay_in" class="nav-links"></a>
+            <h2>Register Payment on an invoice</h2>
+            <ol>
+                <li>Open the accounting module.</li>
+                <img src="images/accounting/accounts-payment1.png" class="tut-images">
+                <li>Click on the customer invoices tab.</li>
+                <img src="images/accounting/accounts-payment2.png" class="tut-images">
+                <li>Select the invoice payment is to be applied to.</li>
+                <img src="images/accounting/accounts-payment3.png" class="tut-images">
+                <li>Click on the register payment button.</li>
+                <img src="images/accounting/accounts-payment4.png" class="tut-images">
+                <li>Fill out all relevant field related to the payment.</li>
+                <img src="images/accounting/accounts-payment5.png" class="tut-images">
+                <li>Click on create payment.</li>
+                <img src="images/accounting/accounts-payment6.png" class="tut-images">
+                <li>Payment has been successfully registered. The invoice is now in payment.</li>
+                <img src="images/accounting/accounts-payment7.png" class="tut-images">
+            </ol>
+            <a id="reg_pay_bill" class="nav-links"></a>
+            <h2>Register payment on vendor bill.</h2>
+            <ol>
+                <li>Open the accounting module.</li>
+                <img src="images/accounting/accounts-paymentbill1.png" class="tut-images">
+                <li>Open the vendor bills tabs.</li>
+                <img src="images/accounting/accounts-paymentbill2.png" class="tut-images">
+                <li>Select the bill payment is to be applied to.</li>
+                <img src="images/accounting/accounts-paymentbill3.png" class="tut-images">
+                <li>FIll in all relevant fields (Journal, Amount, Payment Date, Memo etc.)</li>
+                <img src="images/accounting/accounts-paymentbill4.png" class="tut-images">
+                <li>Click the create payment button.</li>
+                <img src="images/accounting/accounts-paymentbill5.png" class="tut-images">
+                <li>Payment has successfully been applied to vendor bill. The bill is now in payment.</li>
+                <img src="images/accounting/accounts-paymentbill6.png" class="tut-images">
+            </ol>
+            <a id="reg_pay_w_inv" class="nav-links"></a>
+            <h2>Register payment without invoice</h2>
+            <ol>
+                <li>Open the accounting module.</li>
+                <img src="images/accounting/accounts-regpayment1.png" class="tut-images">
+                <li>Click the customers tab.</li>
+                <img src="images/accounting/accounts-regpayment2.png" class="tut-images">
+                <li>Click on the payments tab.</li>
+                <img src="images/accounting/accounts-regpayment3.png" class="tut-images">
+                <li>Click on the create button.</li>
+                <img src="images/accounting/accounts-regpayment4.png" class="tut-images">
+                <li>Enter all the relevant information (Journal, Customer, Amount, Date, Memo etc.)</li>
+                <img src="images/accounting/accounts-regpayment5.png" class="tut-images">
+                <li>Click the confirm button.</li>
+                <img src="images/accounting/accounts-regpayment6.png" class="tut-images">
+                <li>Payment has been registered.</li>
+                <img src="images/accounting/accounts-regpayment7.png" class="tut-images">
+            </ol>
+            <a id="reg_unapplied" class="nav-links"></a>
+            <h2>Register unapplied payment to multiple invoices</h2>
+            <ol>
+                <li>Open the accounting module.</li>
+                <img src="images/accounting/accounts-reconpayment1.png" class="tut-images">
+                <li>Open the customer tab.</li>
+                <img src="images/accounting/accounts-reconpayment2.png" class="tut-images">
+                <li>Click on payments.</li>
+                <img src="images/accounting/accounts-reconpayment3.png" class="tut-images">
+                <li>Selct the unapplied payment to be used.</li>
+                <img src="images/accounting/accounts-reconpayment4.png" class="tut-images">
+                <li>Click the edit button.</li>
+                <img src="images/accounting/accounts-reconpayment6.png" class="tut-images">
+                <li>Enter the amount to be applied to each invoice in the reconcile amount column.</li>
+                <img src="images/accounting/accounts-reconpayment7.png" class="tut-images">
+                <img src="images/accounting/accounts-reconpayment8.png" class="tut-images">
+                <li>Click the reconcile button.</li>
+                <img src="images/accounting/accounts-reconpayment9.png" class="tut-images">
+                <li>Click the save button</li>
+                <img src="images/accounting/accounts-reconpayment0.png" class="tut-images">
+                <li>Payment has been successfully applied to invoices.</li>
+                <img src="images/accounting/accounts-reconpayment10.png" class="tut-images">
+            </ol>
+            <a id="gen_recon" class="nav-links"></a>
+            <h2>General reconciliation of payments.</h2>
+            <!-- Check if this is the name -->
+            <ol>
+                <li>Open the accounting modules.</li>
+                <img src="images/accounting/accounts-recon1.png" class="tut-images">
+                <li>Click the reconcile on the jornal for respective reconcilation.</li>
+                <img src="images/accounting/accounts-recon2.png" class="tut-images">
+                <li>Search for vendor/customer to which payment has been registered.</li>
+                <img src="images/accounting/accounts-recon3.png" class="tut-images">
+                <li>Select transaction (invoice/vendor bill) to be reconciled</li>
+                <img src="images/accounting/accounts-recon4.png" class="tut-images">
+                <li>Click on the validate button.</li>
+                <img src="images/accounting/accounts-recon5.png" class="tut-images">
+                <li>Invoice/Vendor Bill has been updated from in pament to paid.</li>
+                <img src="images/accounting/accounts-recon6.png" class="tut-images">
+            </ol>
+
+        </div>
+        <a href="tutorialdocs/Accounting.pdf" download class="choplawd">
+            <div class="download">
+            <div class="d-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                  </svg>
+            </div>
+            <div class="d-text">
+                <span id="spanAdd">Additional Manuals</span>
+            </div>
+        </div>
+        </a>
+        
+        <div class="clear2"></div>
+        <div class="footer">
+            <div class="footer-text">
+                <h3>Sales and Distribution Limited</h3>
+                <p>
+                    14 Collins Green Avenue,<br />
+                    Kingston 5,<br />
+                    Jamaica
+                </p>
+            </div>
+            <div class="footer-image">
+                <a href="https://manpower.odoo.com">
+                    <img src="images/1280px-Odoo_logo.svg-removebg-preview (1).png" class="odoo-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
