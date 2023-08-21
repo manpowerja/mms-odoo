@@ -230,6 +230,10 @@ body{
     font-size:35px;
 }
 
+.home-tutorials-section a{
+    color:black;
+}
+
 @media(max-width:1400px){
 
     body{
